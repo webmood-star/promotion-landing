@@ -21,7 +21,7 @@ export default function TrustSection() {
     <section className="bg-slate-50 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-  병·의원 홈페이지 전문 제작을 합니다.{" "}
+  About
   <span className="text-medi">Webmood Medi</span>
 </h2>
 

@@ -32,7 +32,7 @@ export default function Hero() {
   "
 >
 <h1
-  className="text-5xl md:text-6xl font-extrabold tracking-[-0.01em]"
+  className="text-4xl md:text-6xl font-extrabold tracking-[-0.01em]"
   style={{ lineHeight: 1.3 }}
 >
   예약이 끊이지 않는 <br />
@@ -41,6 +41,7 @@ export default function Hero() {
 
 <p className="mt-4 text-xl md:text-2xl text-slate-100">
   오픈 이벤트 기간인 9월 30일까지{" "}
+  <br className="md:hidden" />
   <span className="text-2xl md:text-3xl font-bold">특별한 구성</span>
   으로 제공합니다.
 </p>

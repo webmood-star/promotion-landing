@@ -38,7 +38,7 @@ export default function ValueColumns() {
       <div className="max-w-6xl mx-auto px-4 py-20">
         <header className="text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-        홈페이지 하나로 매출 성장이 달라집니다</h2>
+        성장은 홈페이지에서 시작됩니다</h2>
         </header>
 
         <div ref={rootRef} className="mt-12">

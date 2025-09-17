@@ -20,7 +20,7 @@ export default function HomeSiteSection() {
         {/* 타이틀 */}
         <header className="text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-            홈페이지 하나로 환자 유입이 달라집니다
+            차이가 보이시나요?
           </h2>
         </header>
 

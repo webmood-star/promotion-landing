@@ -26,7 +26,7 @@ export default function BenefitSection() {
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-      확실한 기준으로 환자 신뢰를 만듭니다</h2>
+      병·의원 특화 전략으로 설계합니다</h2>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {reportItems.map(({ icon: Icon, title, img }, i) => (

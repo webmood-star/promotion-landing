@@ -141,7 +141,7 @@ export default function Website() {
   return (
     <section className="bg-white py-16 text-center">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-      환자 경험의 흐름을 고려한 구조로 바뀝니다
+      환자와 병원을 함께 생각해 만듭니다
       </h2>
 
       <div className="mt-10 mx-auto max-w-6xl px-4 sm:px-6">

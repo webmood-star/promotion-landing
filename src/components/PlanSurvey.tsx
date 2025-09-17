@@ -84,7 +84,7 @@ const RESULT_DATA: Record<
     oneLiner:
       "안정적이고 차분한 디자인으로 의료진·병원 정보를 강조해\n환자에게 신뢰를 전달할 수 있는 신뢰형 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "연령대 다양 · 가족 단위 환자 비중 높은 병·의원",
+    recText: "전문 브랜드 이미지를 굳히고 싶은 병·의원", 
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },
@@ -93,7 +93,7 @@ const RESULT_DATA: Record<
     oneLiner:
       "세련된 비주얼과 깔끔한 레이아웃으로 젊은 환자층의 눈길을 사로잡고\n병원 이미지를 차별화할 수 있는 트렌디형 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "20~30대 환자 비중 높음 · 브랜딩 중요",
+    recText: "젊은 층이 타깃이고 브랜딩이 중요한 병·의원",
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },
@@ -102,7 +102,7 @@ const RESULT_DATA: Record<
     oneLiner:
       "직관적인 구조와 모바일 친화적인 UI로 환자가 빠르게 예약·상담을 진행할 수 있는\n간편 상담형 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "온라인 예약/상담 비중 높음 · 신규 전환 중요",
+    recText: "온라인 예약/상담 비중이 높은 병·의원",
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },

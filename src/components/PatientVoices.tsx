@@ -6,9 +6,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const messages = [
-  { text: "플레이스는 있지만, 홈페이지가 없잖아.\n정보는 어디서 확인해야 하지?", img: "/images/people1.png" },
-  { text: "여기는 이벤트 홍보만 하네. 진료는 잘하는 거 맞아?", img: "/images/people2.png" },
-  { text: "모바일로 보기에 홈페이지가 답답한 느낌이야.\n예약은 잘 되는건가?", img: "/images/people3.png" }, // ✅ 문구 수정
+  { 
+    desktop: "플레이스는 있지만, 홈페이지가 없잖아.\n정보는 어디서 확인해야 하지?",
+    mobile: "플레이스는 있지만,\n홈페이지가 없잖아.\n정보는 어디서 확인해야 하지?",
+    img: "/images/people1.png" 
+  },
+  { 
+    desktop: "여기는 이벤트 홍보만 하네. 진료는 잘하는 거 맞아?",
+    mobile: "여기는 이벤트 홍보만 하네.\n진료는 잘하는 거 맞아?",
+    img: "/images/people2.png" 
+  },
+  { 
+    desktop: "모바일로 보기에 홈페이지가 답답한 느낌이야.\n예약은 잘 되는건가?",
+    mobile: "모바일로 보기에\n홈페이지가 답답한 느낌이야.\n예약은 잘 되는건가?",
+    img: "/images/people3.png" 
+  },
 ];
 
 const TAIL_STROKE = "#cbd5e1"; // slate-300
@@ -87,7 +99,8 @@ export default function PatientVoices() {
                         "whitespace-pre-line break-words", // ✅ 긴 단어 줄바꿈
                       ].join(" ")}
                     >
-                      {msg.text}
+                      <span className="block md:hidden">{msg.mobile}</span>
+                      <span className="hidden md:block">{msg.desktop}</span>
                     </motion.div>
                   </div>
                 </div>

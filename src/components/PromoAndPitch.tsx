@@ -61,6 +61,7 @@ export default function OfferCompare() {
           >
             <span className="text-sm text-slate-600">스타터 패키지</span>{" "}
             <del className="text-base font-semibold text-slate-500">1,500,000원</del>
+            <br className="md:hidden" />
             <span className="mx-2 text-slate-400">→</span>
             <span className="text-sm text-slate-600">오픈 이벤트 패키지</span>{" "}
             <strong className="text-lg font-extrabold text-medi">1,000,000원</strong>
