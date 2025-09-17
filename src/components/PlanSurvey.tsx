@@ -72,7 +72,8 @@ const RESULT_DATA: Record<
   TypeKey,
   {
     title: string;
-    oneLiner: string;
+    oneLinerDesktop: string;
+    oneLinerMobile: string;
     recLabel: string;
     recText: string;
     cta: string;
@@ -81,28 +82,28 @@ const RESULT_DATA: Record<
 > = {
   trust: {
     title: "신뢰형 홈페이지",
-    oneLiner:
-      "안정적이고 차분한 디자인으로 의료진·병원 정보를 강조해\n환자에게 신뢰를 전달할 수 있는 신뢰형 홈페이지가 이상적입니다.",
+    oneLinerDesktop: "안정적이고 차분한 디자인으로 의료진·병원 정보를 강조해\n환자에게 신뢰를 전달할 수 있는 신뢰형 홈페이지가 이상적입니다.",
+    oneLinerMobile: "안정적이고 차분한 디자인으로\n의료진·병원 정보를 강조해\n환자에게 신뢰를 전달할 수 있는\n신뢰형 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "전문 브랜드 이미지를 굳히고 싶은 병·의원", 
+    recText: "전문적성을 강조하고 싶은 병·의원", 
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },
   trendy: {
     title: "트렌디형 홈페이지",
-    oneLiner:
-      "세련된 비주얼과 깔끔한 레이아웃으로 젊은 환자층의 눈길을 사로잡고\n병원 이미지를 차별화할 수 있는 트렌디형 홈페이지가 이상적입니다.",
+    oneLinerDesktop: "세련된 비주얼과 깔끔한 레이아웃으로 젊은 환자층의 눈길을 사로잡고\n병원 이미지를 차별화할 수 있는 트렌디형 홈페이지가 이상적입니다.",
+    oneLinerMobile: "세련된 비주얼과 깔끔한 레이아웃으로\n젊은 환자층의 눈길을 사로잡고\n병원 이미지를 차별화할 수 있는\n트렌디형 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "젊은 층이 타깃이고 브랜딩이 중요한 병·의원",
+    recText: "젊은 층이 타깃인 감각적인 병·의원",
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },
   conv: {
     title: "간편 상담형 홈페이지",
-    oneLiner:
-      "직관적인 구조와 모바일 친화적인 UI로 환자가 빠르게 예약·상담을 진행할 수 있는\n간편 상담형 홈페이지가 이상적입니다.",
+    oneLinerDesktop: "직관적인 구조와 모바일 친화적인 UI로 환자가 빠르게 예약·상담을 진행할 수 있는\n간편 상담형 홈페이지가 이상적입니다.",
+    oneLinerMobile: "직관적인 구조와\n모바일 친화적인 UI로\n환자가 빠르게 예약·상담을\n진행할 수 있는 홈페이지가 이상적입니다.",
     recLabel: "추천 유형",
-    recText: "온라인 예약/상담 비중이 높은 병·의원",
+    recText: "상담 전환이 중요한 병·의원",
     cta: "혜택 받고 제작하기",
     ctaHref: "https://naver.me/x4GOmaGM",
   },
@@ -287,7 +288,8 @@ function ResultView({
 
       {/* ✅ oneLiner 줄바꿈 적용 */}
       <p className="mt-4 whitespace-pre-line text-slate-700 leading-relaxed">
-        {data.oneLiner}
+        <span className="block md:hidden">{data.oneLinerMobile}</span>
+        <span className="hidden md:block">{data.oneLinerDesktop}</span>
       </p>
 
       {/* 추천 유형 (라벨만) */}
