@@ -88,7 +88,7 @@ export default function Process() {
     },
     {
       title: "디자인 시안",
-      desc: "3일 이내에 디자인 시안을 완성하고\n무제한 수정이 가능합니다.",
+      desc: "3일 이내에 디자인 시안을 제공하고\n무제한 수정이 가능합니다.",
     },
     {
       title: "개발 & 구축",

@@ -9,9 +9,9 @@ type BarCustom = { index: number; to: number };
 const easeOut = cubicBezier(0.16, 1, 0.3, 1); // ✅ number[] 대신 cubicBezier 함수
 
 const METRICS: Metric[] = [
-  { label: "신규 환자 유입", to: 0.82, color: "bg-sky-400" },
-  { label: "상담 문의 건수", to: 0.68, color: "bg-sky-300" },
-  { label: "실제 예약 환자 수", to: 0.90, color: "bg-medi" },
+  { label: "신환 유입", to: 0.82, color: "bg-sky-400" },
+  { label: "문의 건수", to: 0.68, color: "bg-sky-300" },
+  { label: "내원 환자", to: 0.90, color: "bg-medi" },
 ];
 
 // ✅ Variants 타입 + custom 파라미터 명시
