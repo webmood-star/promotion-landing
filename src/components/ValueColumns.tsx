@@ -2,6 +2,7 @@
 
 import { motion, useAnimation, useInView, cubicBezier, type Variants } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { trackCTA } from "@/lib/gtag";
 
 type Metric = { label: string; to: number; color: string }; // 0~1
 type BarCustom = { index: number; to: number };
@@ -37,8 +38,9 @@ export default function ValueColumns() {
     <section className="relative bg-gradient-to-b from-slate-50 to-white border-t border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4 py-20">
         <header className="text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-        성장은 홈페이지에서 시작됩니다</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
+            저희가 병원 성장을 돕겠습니다
+          </h2>
         </header>
 
         <div ref={rootRef} className="mt-12">
@@ -64,6 +66,23 @@ export default function ValueColumns() {
             </div>
           </div>
         </div>
+
+        {/* CTA (풀-블리드 유지) */}
+        <motion.div variants={barVariants} className="mt-14 flex flex-col items-center gap-3">
+          <a
+            href="https://naver.me/x4GOmaGM"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackCTA("Package")}   // ✅ 추적 코드 추가
+            className="inline-flex w-full items-center justify-center rounded-2xl bg-medi px-7 py-3.5 text-lg sm:text-xl font-semibold text-white shadow-md transition will-change-transform hover:-translate-y-0.5 hover:shadow-lg hover:scale-[1.02] active:scale-[0.995]"
+            aria-label="오픈 이벤트 패키지 혜택으로 제작 신청"
+          >
+            오픈 이벤트 패키지로 제작하기
+          </a>
+          <p className="text-[16px] text-slate-500">
+            * 본 혜택은 신청 현황에 따라 조기 종료될 수 있습니다.
+          </p>
+        </motion.div>
       </div>
 
       <div className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-sky-100 blur-3xl opacity-60" />

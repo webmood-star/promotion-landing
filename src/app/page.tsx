@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
+import PromoAndPitch from "@/components/PromoAndPitch";
 import TrustSection from "@/components/TrustSection";
 import PatientVoices from "@/components/PatientVoices";
 import BeforeAfter from "@/components/BeforeAfter";
 import BenefitSection from "@/components/Benefit";
 import Cases from "@/components/Cases";
 import ValueColumns from "@/components/ValueColumns";
-import PromoAndPitch from "@/components/PromoAndPitch";
 import Process from "@/components/Process";
 import Faq from "@/components/Faq"; // ✅ 추가
 import FeaturesSection from "@/components/Features";
@@ -17,13 +17,13 @@ export default function Page() {
     <main className="min-h-screen">
       <Suspense fallback={<div>로딩 중...</div>}>
         <Hero />
+        <PromoAndPitch />
         <TrustSection />
         <PatientVoices />
         <BeforeAfter />
         <BenefitSection />
         <Cases />
         <ValueColumns />
-        <PromoAndPitch />
         <Process />
         <Faq /> {/* ✅ Process 밑에 삽입 */}
         <FeaturesSection />

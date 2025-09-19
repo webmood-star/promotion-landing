@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import { Suspense } from "react";
 import Analytics from "@/components/Analytics";
+import FloatingCTA from "@/components/FloatingCTA"; // 👈 추가
 
 const notoSans = Noto_Sans_KR({
   subsets: ["latin"],
@@ -13,6 +14,10 @@ const notoSans = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: "Webmood Medi | 병·의원 홈페이지 전문 제작",
   description: "병·의원 맞춤형 홈페이지/브랜딩/예약 전환 설계",
+  icons: {
+    icon: "/favicon-v2.svg?v=2024",
+    apple: "/favicon-v2.svg?v=2024",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -33,6 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* 전역 푸터 */}
         {/* <Footer /> */}
+
+        {/* 오른쪽 하단 전역 CTA */}
+        <FloatingCTA />   {/* 👈 여기 추가 */}
 
         {/* GA4 Analytics with Suspense */}
         <Suspense fallback={null}>
