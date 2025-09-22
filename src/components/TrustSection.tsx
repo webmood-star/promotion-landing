@@ -21,8 +21,8 @@ export default function TrustSection() {
     <section className="bg-slate-50 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-  About
-  <span className="text-medi">Webmood Medi</span>
+  About 
+  <span className="text-medi"> Webmood Medi</span>
 </h2>
 
 <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">

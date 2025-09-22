@@ -178,7 +178,7 @@ export default function OfferCompare() {
 
                 {/* 가격 영역 */}
                 <div className="mt-5 border-t border-slate-200 pt-3">
-                  <p className="text-[12px] font-medium text-slate-500">이벤트 적용가</p>
+                  <p className="text-[12px] font-medium text-slate-500">이벤트 적용가 (현금 결제 + 현금영수증 발급 가능)</p>
                   <div className="mt-0.5 flex items-baseline gap-2">
                     <p className="text-2xl font-extrabold tracking-tight text-medi">1,000,000원</p>
                     {/* VAT 라벨 */}
@@ -204,7 +204,8 @@ export default function OfferCompare() {
     오픈 이벤트 패키지로 제작하기
   </a>
             <p className="text-[16px] text-slate-500">
-              * 본 혜택은 신청 현황에 따라 조기 종료될 수 있습니다.
+              * 본 혜택은 신청 현황에 따라 조기 종료될 수 있습니다.<br />
+              * 결제는 현금만 가능하며, 현금영수증 발급 가능합니다.
             </p>
           </motion.div>
         </motion.div>
