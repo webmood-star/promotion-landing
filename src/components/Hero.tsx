@@ -40,9 +40,9 @@ export default function Hero() {
 </h1>
 
 <p className="mt-4 text-xl md:text-2xl text-slate-100">
-  오픈 이벤트 기간인 9월 30일까지{" "}
+  오픈 이벤트 기간인 10월 31일까지{" "}
   <br className="md:hidden" />
-  <span className="text-2xl md:text-3xl font-bold">특별한 구성</span>
+  <span className="text-2xl md:text-3xl font-bold">특별 구성</span>
   으로 제공합니다.
 </p>
 

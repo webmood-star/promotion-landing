@@ -138,43 +138,61 @@ export default function OfferCompare() {
                 </div>
 
                 {/* 리스트 */}
-                <motion.ul
-                  variants={{ show: { transition: { staggerChildren: 0.05 } } }}
-                  className="mt-3 space-y-2.5 text-sm sm:text-[15px] leading-relaxed text-slate-900"
-                >
-                  {[
-                    "병·의원 특화 4페이지",
-                    "네이버 예약 연동",
-                    "카카오톡 상담 연동",
-                    "브랜드 컬러 적용",
-                    "맞춤 브랜딩 반영",
-                    "네이버 지도 위젯 포함",
-                    "무상 유지관리 3개월",
-                    "검색 최적화 세팅(SEO)",
-                    "10일 이내 빠른 제작",
-                    "무제한 수정",
-                  ].map((t) => (
-                    <motion.li key={t} variants={li} className="flex items-start gap-2">
-                      {/* 미니 체크 아이콘 */}
-                      <span
-                        aria-hidden
-                        className="mt-1 inline-flex h-4 w-4 flex-none items-center justify-center rounded-full bg-medi/10 text-medi"
-                      >
-                        <svg viewBox="0 0 20 20" className="h-3 w-3">
-                          <path
-                            d="M5 10.5l3 3 7-7"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span className="font-semibold">{t}</span>
-                    </motion.li>
-                  ))}
-                </motion.ul>
+<motion.ul
+  variants={{ show: { transition: { staggerChildren: 0.05 } } }}
+  className="mt-3 space-y-2.5 text-sm sm:text-[15px] leading-relaxed text-slate-900"
+>
+  {/* 1) 병의원 특화: 집중형/멀티형 설명 블록 */}
+  <motion.li variants={li} className="flex items-start gap-2">
+    <span
+      aria-hidden
+      className="mt-1 inline-flex h-4 w-4 flex-none items-center justify-center rounded-full bg-medi/10 text-medi"
+    >
+      <svg viewBox="0 0 20 20" className="h-3 w-3">
+        <path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </span>
+    <div>
+      <span className="font-extrabold">병·의원 특화 홈페이지 (집중형 or 멀티형)</span>
+      <ul className="mt-1 ml-5 list-disc space-y-0.5 text-slate-700">
+        <li>
+          <strong className="text-slate-900">집중형</strong>
+          <span className="text-slate-600"> (전환에 최적화된 스크롤형)</span>
+        </li>
+        <li>
+          <strong className="text-slate-900">멀티형</strong>
+          <span className="text-slate-600"> (브랜딩에 최적화된 메뉴형)</span>
+        </li>
+      </ul>
+    </div>
+  </motion.li>
+
+  {/* 2) 나머지 항목들 */}
+  {[
+    "네이버 예약 연동",
+    "카카오톡 상담 연동",
+    "브랜드 컬러 적용",
+    "맞춤 브랜딩 반영",
+    "네이버 지도 위젯 포함",
+    "AI 이미지 제작",
+    "무상 유지관리 3개월",
+    "검색 최적화 세팅(SEO)",
+    "10일 이내 빠른 제작",
+    "무제한 수정",
+  ].map((t) => (
+    <motion.li key={t} variants={li} className="flex items-start gap-2">
+      <span
+        aria-hidden
+        className="mt-1 inline-flex h-4 w-4 flex-none items-center justify-center rounded-full bg-medi/10 text-medi"
+      >
+        <svg viewBox="0 0 20 20" className="h-3 w-3">
+          <path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </span>
+      <span className="font-semibold">{t}</span>
+    </motion.li>
+  ))}
+</motion.ul>
 
                 {/* 가격 영역 */}
                 <div className="mt-5 border-t border-slate-200 pt-3">
