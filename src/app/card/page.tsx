@@ -111,7 +111,7 @@ export default function DigitalCard() {
     className="flex items-center justify-center gap-2 bg-[#00c4d1] text-white font-semibold rounded-xl px-4 py-2 text-sm shadow hover:opacity-90 transition"
   >
     <ClipboardList className="size-4 shrink-0" />
-    20만원 상당의 40분 컨설팅 무료로 신청하기
+    20만원 상당 컨설팅 무료로 신청하기
   </a>
 </div>
 
