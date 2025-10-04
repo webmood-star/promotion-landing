@@ -18,14 +18,14 @@ const BRAND = {
 };
 
 const CATEGORIES = [
-  { label: "브랜드", desc: "설문을 바탕으로 병·의원 이미지를 맞춤 반영합니다." },
-  { label: "예약", desc: "환자가 바로 예약·상담을 신청하도록 흐름을 설계합니다." },
+  { label: "브랜드", desc: "설문을 바탕으로 병·의원을 맞춤 브랜딩합니다." },
+  { label: "예약", desc: "환자가 예약·상담을 신청하는 구조로 설계합니다." },
   { label: "콘텐츠", desc: "환자 입장에서 신뢰를 주는 전문 글을 작성합니다." },
 ];
 
 export default function DigitalCard() {
   const [flipped, setFlipped] = useState(false);
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<string | null>("브랜드");
 
   return (
     <main className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
