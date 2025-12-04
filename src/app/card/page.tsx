@@ -6,16 +6,18 @@ import { ExternalLink, MessageSquare, ClipboardList } from "lucide-react";
 
 const BRAND = {
   name: "정서희",
-  title: "Web Director · 대표",
-  phone: "010-3636-3683", // 표시용
-  phoneHref: "01036363683", // 실제 tel 링크용 (하이픈 제거)
-  logoSrc: "/images/webmood1.png",
-  site: "https://www.webmoodmedi.com",
-  blogSample:
-    "https://example.com/brand-case?utm_source=qr_card&utm_medium=qr&utm_campaign=proposal",
-  kakao: "https://open.kakao.com/o/your-link",
-  form: "https://naver.me/xxF9RrGS",
+  title: "Director · 대표",
+  phone: "010-3636-3683",
+  phoneHref: "01036363683",
+  logoSrc: "/images/webmoodmedi1.png",
+
+  // 🔥 수정된 부분
+  blogSample: "https://blog.naver.com/webmoodmedi",
+  kakao: "https://open.kakao.com/o/suFmqW4h",
+
+  form: "https://naver.me/5R4Nju6l",
 };
+
 
 const CATEGORIES = [
   { label: "브랜드", desc: "설문을 바탕으로 병·의원을 맞춤 브랜딩합니다." },
@@ -69,7 +71,7 @@ export default function DigitalCard() {
                 <p className="mt-1 text-slate-600">{BRAND.title}</p>
               </div>
 
-              {/* 전화번호 (명함 느낌: 중앙, 큼직, 아이콘 없음) */}
+              {/* 전화번호 */}
               <div className="mt-1 text-center">
                 <a
                   href={`tel:${BRAND.phoneHref}`}
@@ -79,7 +81,7 @@ export default function DigitalCard() {
                 </a>
               </div>
 
-              {/* 액션 버튼 (브랜딩 예시 → 카톡 → 네이버폼) */}
+              {/* 액션 버튼 */}
               <div className="mt-8 space-y-3">
                 {/* 브랜딩 예시글 */}
                 <a
@@ -89,7 +91,9 @@ export default function DigitalCard() {
                   className="flex items-center gap-2 text-slate-700 hover:text-slate-900 py-1"
                 >
                   <ExternalLink className="size-5 shrink-0" />
-                  <span className="text-sm underline underline-offset-4">웹무드메디 블로그 포스팅 사례 보기</span>
+                  <span className="text-sm underline underline-offset-4">
+                    웹무드메디 블로그 포스팅 사례 보기
+                  </span>
                 </a>
 
                 {/* 카톡 문의 */}
@@ -100,22 +104,24 @@ export default function DigitalCard() {
                   className="flex items-center gap-2 text-slate-700 hover:text-slate-900 py-1"
                 >
                   <MessageSquare className="size-5 shrink-0" />
-                  <span className="text-sm underline underline-offset-4">블로그 대행 문의하기</span>
+                  <span className="text-sm underline underline-offset-4">
+                    블로그 대행 문의하기
+                  </span>
                 </a>
 
-                {/* 네이버폼 상담신청 */}
+                {/* 네이버폼 */}
                 <a
-    href={BRAND.form}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-2 bg-[#00c4d1] text-white font-semibold rounded-xl px-4 py-2 text-sm shadow hover:opacity-90 transition"
-  >
-    <ClipboardList className="size-4 shrink-0" />
-    20만원 상당 컨설팅 무료로 신청하기
-  </a>
-</div>
+                  href={BRAND.form}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-[#00c4d1] text-white font-semibold rounded-xl px-4 py-2 text-sm shadow hover:opacity-90 transition"
+                >
+                  <ClipboardList className="size-4 shrink-0" />
+                  20만원 상당 컨설팅 무료로 신청하기
+                </a>
+              </div>
 
-              {/* 카테고리 (후킹 문구 + 칩) */}
+              {/* 카테고리 */}
               <div className="mt-10 text-center">
                 <p className="text-sm font-semibold text-slate-800 mb-3">
                   의료 전문 콘텐츠, 브랜드 전략까지 한 번에.
@@ -148,17 +154,7 @@ export default function DigitalCard() {
                 </p>
               )}
 
-              {/* 홈페이지 주소 + 앞면으로 돌아가기 */}
-              <div className="mt-4 text-center">
-                <a
-                  href={BRAND.site}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-slate-500 hover:underline"
-                >
-                  www.webmoodmedi.com
-                </a>
-              </div>
+              {/* 앞면으로 돌아가기 */}
               <div className="mt-6 text-center">
                 <button
                   onClick={() => setFlipped(false)}
