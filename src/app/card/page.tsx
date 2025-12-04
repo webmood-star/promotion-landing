@@ -12,7 +12,7 @@ const BRAND = {
   logoSrc: "/images/webmoodmedi1.png",
 
   // 🔥 수정된 부분
-  blogSample: "https://blog.naver.com/webmoodmedi",
+  blogSample: "https://blog.naver.com/webmoodmedi/224097397691",
   kakao: "https://open.kakao.com/o/suFmqW4h",
 
   form: "https://naver.me/5R4Nju6l",
