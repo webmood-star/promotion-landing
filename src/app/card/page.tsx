@@ -6,14 +6,14 @@ import { ExternalLink, MessageSquare, ClipboardList } from "lucide-react";
 
 const BRAND = {
   name: "정서희",
-  title: "Director · 대표",
+  title: "웹무드메디 Director · 대표",
   phone: "010-3636-3683",
   phoneHref: "01036363683",
   logoSrc: "/images/webmoodmedi1.png",
 
   // 🔥 수정된 부분
   blogSample: "https://blog.naver.com/webmoodmedi/224097397691",
-  kakao: "https://open.kakao.com/o/suFmqW4h",
+  kakao: "https://open.kakao.com/o/s5Ta4W4h",
 
   form: "https://naver.me/5R4Nju6l",
 };
