@@ -15,7 +15,7 @@ const BRAND = {
   blogSample: "https://blog.naver.com/webmoodmedi/224097397691",
   kakao: "https://open.kakao.com/o/s5Ta4W4h",
 
-  form: "https://naver.me/5R4Nju6l",
+  form: "https://naver.me/xxF9RrGS",
 };
 
 
