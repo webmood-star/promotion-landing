@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 export default function FloatingCTA() {
   const pathname = usePathname();
 
-  // /card 페이지에서는 숨김
-  if (pathname.startsWith("/card")) return null;
+  // /card, /apply 페이지에서는 숨김
+  if (pathname.startsWith("/card") || pathname.startsWith("/apply")) return null;
 
   const handleClick = () => {
     if (typeof window !== "undefined" && (window as any).gtag) {
