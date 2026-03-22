@@ -141,7 +141,7 @@ export default function EbookApplyLanding() {
     <p className="mt-3 text-2xl md:text-4xl font-semibold text-slate-700 leading-tight">
       바로{" "}
       <span className="font-black text-3xl md:text-5xl text-slate-900 leading-none">
-        '이것'
+       &#39;이것&#39;
       </span>{" "}
       입니다
     </p>
